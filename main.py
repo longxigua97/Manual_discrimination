@@ -315,7 +315,7 @@ def main():
     parser.add_argument("--noDisplay",      action="store_true",       help="OpenCV ウィンドウを表示しない（ヘッドレス）")
     parser.add_argument("--display",        type=str,   default=":0",    help="DISPLAY を強制指定（例: :0）")
     parser.add_argument("--csv",            type=str,   default="",    help="フレーム位置 CSV 出力パス（既定: 入力名_positions.csv）")
-    parser.add_argument("--svmModel",       type=str,   default="svm_weight/svm_model_from_positions_labeled_test.joblib",    help="SVM モデルパス")
+    parser.add_argument("--svmModel",       type=str,   default="svmweight/svm_model_from_positions.joblib",    help="SVM モデルパス")
     parser.add_argument("--svmMinProb",     type=float, default=0.5,   help="SVM 出力の最小信頼度しきい値")
     args = parser.parse_args()
 
