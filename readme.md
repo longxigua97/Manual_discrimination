@@ -15,17 +15,17 @@
 部品とドライバーに対して手指が接近し、短周期で回転動作を繰り返す特徴を持つ
 
 これらの動作の違いを、「指先の軌跡」「回転速度」「部品との相対距離」として数値化し、識別モデルによって判定します。
+
+※以下にデモ画像を表示します。表示されない場合は、[デモ動画](./readme/output.mp4)をご確認ください。
 <p align="center">
-  <video src="https://github.com/user-attachments/assets/abaff4d5-92b7-4c9d-90cf-03b8ac8d2666" width="500" controls muted autoplay loop>
-    您的浏览器不支持 video 标签。
-  </video>
+  <img src="readme/output_w640.gif" alt="デモ画像GIF" width="640">
 </p>
 
 ## 3. システム構造
 ### 3.1 現場へ即時導入可能のエッジデバイス
 工場内での迅速なセットアップを実現するため、小型かつ高性能なエッジデバイス **Raspberry Pi 5**を採用しました。\
 高い演算能力を備えつつ低消費電力で動作するため、既存の製造ラインへの後付け設置に最適です。\
-参考：https://www.switch-science.com/products/10055?src=raspberrypi
+参考：[Raspberry Pi 5 詳細スペック](https://www.switch-science.com/products/10055?src=raspberrypi)
 <p align="center">
   <img src="readme/device.png" alt="エッジデバイス" width="400">
 </p>
