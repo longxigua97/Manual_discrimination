@@ -16,7 +16,7 @@
 
 これらの動作の違いを、「指先の軌跡」「回転速度」「部品との相対距離」として数値化し、識別モデルによって判定します。
 <p align="center">
-  <video src=readme/output.mp4 width="600" controls muted autoplay loop>
+  <video src=“readme/output.mp4” width="600" controls muted autoplay loop>
     あなたのブラウザはビデオタグをサポートしていません。
   </video>
 </p>
