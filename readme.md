@@ -16,8 +16,8 @@
 
 これらの動作の違いを、「指先の軌跡」「回転速度」「部品との相対距離」として数値化し、識別モデルによって判定します。
 <p align="center">
-  <video src=“readme/output.mp4” width="600" controls muted autoplay loop>
-    あなたのブラウザはビデオタグをサポートしていません。
+  <video src="https://github.com/user-attachments/assets/abaff4d5-92b7-4c9d-90cf-03b8ac8d2666" width="500" controls muted autoplay loop>
+    您的浏览器不支持 video 标签。
   </video>
 </p>
 
@@ -32,13 +32,15 @@
 
 ### 3.2 ３つのAIモデルの統合
 限られた計算リソースで「指と物の相互作用」を正確に捉えるため、役割の異なる3つのアルゴリズムを統合しています。
-
+<div align="center">
+  
 | モデル | 役割 |
 | --- | --- |
 | MediaPipe Hands | 手指ランドマーク（21箇所）の検出 |
 | YOLOv26n | 作業対象物および工具の物体検出 |
 | SVM (Support Vector Machine) | 抽出された特徴量に基づく作業種別の分類 |
 
+</div>
 
 ## 4. リアルタイム認識の実現
 ### 4.1 検知モデルの交互実行による負荷分散
