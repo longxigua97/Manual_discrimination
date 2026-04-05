@@ -15,7 +15,7 @@
 部品とドライバーに対して手指が接近し、短周期で回転動作を繰り返す特徴を持つ
 これらの動作の違いを、「指先の軌跡」「回転速度」「部品との相対距離」として数値化し、識別モデルによって判定します。
 
-※以下に動作デモ（2倍速）を表示します。プレビューが表示されない場合は、[動画ファイル](./readme/output.mp4)をご確認ください。
+※以下に動作デモ（2倍速）を表示します。プレビューが表示されない場合は、[こちら](https://github.com/user-attachments/assets/9a19a599-6514-4a42-9bf4-0eb2f7c08f34)からご確認ください。
 <p align="center">
   <video src="https://github.com/user-attachments/assets/9a19a599-6514-4a42-9bf4-0eb2f7c08f34" width="600" autoplay loop muted playsinline>
     あなたのブラウザはビデオタグをサポートしていません。
