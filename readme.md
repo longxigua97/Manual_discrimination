@@ -13,11 +13,12 @@
 部品に対して手指が接近し、手指の動きに伴って対象物が移動する特徴を持つ
 - **ネジ締め**\
 部品とドライバーに対して手指が接近し、短周期で回転動作を繰り返す特徴を持つ
+
 これらの動作の違いを、「指先の軌跡」「回転速度」「部品との相対距離」として数値化し、識別モデルによって判定します。
 
-※以下に動作デモ（2倍速）を表示します。プレビューが表示されない場合は、[こちら](https://github.com/user-attachments/assets/9a19a599-6514-4a42-9bf4-0eb2f7c08f34)からご確認ください。
+※以下に動作デモ（2倍速）を表示します。プレビューが表示されない場合は、[こちら](https://github.com/user-attachments/assets/e9631f98-95d9-44af-80bb-d68bdd654acf)からご確認ください。
 <p align="center">
-  <video src="https://github.com/user-attachments/assets/9a19a599-6514-4a42-9bf4-0eb2f7c08f34" width="600" autoplay loop muted playsinline>
+  <video src="https://github.com/user-attachments/assets/e9631f98-95d9-44af-80bb-d68bdd654acf" width="600" autoplay loop muted playsinline>
     あなたのブラウザはビデオタグをサポートしていません。
   </video>
 </p>
@@ -45,7 +46,7 @@
 
 ## 4. リアルタイム認識の実現
 ### 4.1 検知モデルの交互実行による負荷分散
-MediaPipeとYOLOは共に計算負荷が高く、CPUのみを利用するRaspberry Pi 5では、カメラフレームレート（約10FPS）に対して推論が追従できない課題があるため、**検知モデル交互実行** を採用し負荷を分散しています。
+MediaPipeとYOLOは共に計算負荷が高く、CPUのみを利用するRaspberry Pi 5では、カメラフレームレート（10FPS）に対して推論が追従できない課題があるため、**検知モデル交互実行** を採用し負荷を分散しています。
 - 奇数フレーム：MediaPipe Handsによる手指検出を実行
 - 偶数フレーム：YOLO による物体検出を実行
 
